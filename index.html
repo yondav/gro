@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <style>
+
+        /* universal styles */
+
+            body {
+                font-family: 'Roboto';
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            tr {
+                margin-bottom: 10px;
+            }
+
+        /* styles for name-title container and contact info container*/
+
+            .name-title {
+                position: relative;
+                float: left;
+                width: 147.53px;
+                height: 60px;
+                color: #28282b;
+            }
+
+            #name {
+                margin-bottom: 8px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            #title,
+            #department {
+                margin-bottom: 4px;
+                font-size: 10px;
+                font-weight: 400;
+            }
+
+            #contact-info {
+                position: relative;
+                float:left;
+                width: 204.47px;
+                height: 60px;
+                color: #28282b;
+                border-left: 1px solid #e31b37;
+            }
+
+            #contact-info a {
+                color: #28282b;
+            }
+
+            .info-icons {
+                padding-left: 12px;
+                margin-right: 10px;
+                width: 12px;
+                height: 12px;
+            }
+
+            .info {
+                font-size: 10px;
+                font-weight: 400;
+                white-space: nowrap;
+            }
+
+        /* styles for logo and social icons */
+            #middle {
+                position: relative;
+                clear: both;
+                width: 360px;
+                top: 24px;
+                border-top: 1px solid #e31b37;
+            }
+            
+            .logo {
+                float: left;
+                width: 101px;
+                padding-top: 5.5px;
+            }
+
+            #social-icons {
+                position: relative;
+                float:left;
+                left: 215px;
+                padding-top: 10px;
+            }
+            
+            #linkedin {
+                width: 20px;
+                left: 2px;
+            }
+            
+            #twitter {
+                width: 20px;
+            }
+
+        /* styles for addresses */
+            #address-ny,
+            #address-nairobio {
+                position: relative;
+                clear: both;
+                top: 22px;
+            }
+
+            #space {
+                position: relative;
+                clear: both;
+                height: 8px;
+            }
+
+            .map-pin{
+                position: relative;
+                float: left;
+                width: 12px;
+            }
+            
+            .address-type {
+                position: relative;
+                float: left;
+                margin-left: 4px;
+                font-size: 10px;
+                color: #aaaaad;
+            }
+
+            .address-type a {
+                color: #aaaaad;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- #side-by-side for the horizontal layout of top two containers in the email signature -->
+        <section id="side-by-side">
+        <!-- start code for name and title contaner - .name-title = left container -->
+            <div class="name-title">
+        <!-- ******
+            #name = first and last name - first line
+            enter name here 
+        ******-->
+                <span id="name">Alison Lamb</span>
+                <br />
+        <!-- ******
+            #title =  employee role - second line
+            enter role here 
+        ****** -->
+                <span id="title">Visual Designer</span>
+                <br />
+        <!-- ****** 
+            #department = employee's department - third line
+            enter department here
+        ****** -->
+                <span id="department">Design</span>
+            </div>
+
+        <!-- start code for contact info - #contact-info=right container
+        #contact-info = whole containter
+        .info-icons = icons for phone, email, web link
+        .info = phone number, email address, website-->
+                <table id="contact-info">
+                    <tr>
+                        <td class="info-icons">
+                            <img class="info-icons" src="./assets/phone.png" alt="phone">
+                        </td>
+                        <td class="info">
+        <!-- ******
+            enter phone number here 
+        ****** -->
+                            <a href="tel: +1 555 555 5555">+1 555 555 5555</a>
+                        </td>
+                    </tr>
+                    <tr>    
+                        <td class="info-icons">
+                            <img class="info-icons" src="./assets/mail.png" alt="email">
+                        </td>
+                        <td class="info">
+        <!-- ******
+            enter email here
+        ****** -->
+                            <a href="mailto: name.lastname@gro-intelligence.com" target="_blank">name.lastname@gro-intelligence.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-icons">
+                            <img class="info-icons" src="./assets/link.png" alt="website">
+                        </td>
+                        <td class="info">
+        <!-- ******
+            website here
+        ****** -->
+                            <a href="https://gro-intelligence.com/" target="_blank">www.gro-intelligence.com</a>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- #bottom for the horizontal layout of middle two containers in the email signature -->
+        <section id="middle">
+            <!-- .logo = container and logo image -->
+            <div class="logo">
+                <a href="https://gro-intelligence.com/" target="_blank">
+                    <img class="logo" src="./assets/GI Logo.png" alt="Gro-Intelligence">
+                </a>
+            </div>
+            <!-- 
+                #social-icons = container
+                #linkedin = linkedin icon
+                #twitter = twitter icon
+             -->
+            <div id="social-icons">
+                <a href="https://www.linkedin.com/company/3035148" target="_blank">
+                    <img id="linkedin" src="./assets/linkedin2.png" alt="linkedin">
+                </a>
+                <a href="https://twitter.com/GroIntel" target="_blank">
+                    <img id="twitter" src="./assets/twitter2.png" alt="twitter">
+                </a>
+            </div>
+        </section>
+
+            <!-- 
+            #bottom = container for all components below logo and social icons
+            #address-ny = container for map pin and address in new york
+            #address-nairobi = container for map and address in nairobi
+                .address = class for both addresses - one in each container id listed above
+                .map-pin = class for both location icons - one in each container id listed above
+            #space = empty container between two address containers
+            -->
+        <section id="bottom">
+            <div id="address-ny">
+                <div class="address">
+                    <a href="https://goo.gl/maps/XCMzfhMaGQJATGob8" target="_blank">
+                        <img class="map-pin" src="./assets/location.png">
+                    </a>
+                </div>
+                <div class="address-type">
+                    <a href="https://goo.gl/maps/XCMzfhMaGQJATGob8" target="_blank">
+                        <span>1156 6th Ave<br />7th Floor<br />New York, NY 10036 United States</span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="space"></div>
+
+            <div id="address-nairobio">
+                <div class="address">
+                    <a href="https://goo.gl/maps/xzuq6ubas9Fym69Z7" target="_blank">
+                        <img class="map-pin" src="./assets/location.png">
+                    </a>
+                </div>
+                <div class="address-type">
+                    <a href="https://goo.gl/maps/xzuq6ubas9Fym69Z7" target="_blank">
+                        <span>Edalma Park<br />Tsavo Block, 4th Floor<br />Eldama Ravine Road, Westlands<br />Nairobi, Kenya</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
